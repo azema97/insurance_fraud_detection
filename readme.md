@@ -6,7 +6,7 @@ An insurance company hires a team of data scientists to work as consultants in t
 
 Team's task is to answer the following question: **Are there particular trends in the groups of claims submitted that may be indicative of fraud?**
 
-<img src='img/thumbnail.jpg' width='500' style='border: 1px solid grey;'>
+<img src='img/thumbnail.jpg' style='border: 1px solid grey;'>
 
 
 ---
@@ -39,7 +39,7 @@ Before analyzing any tendency available in monetary amounts, we need to confirm 
 - **79.7% insurance claims were approved**, while 20.3 % were rejected.
 - **83% of the cases are registered as no fraud**, 11.5 % as fraud, and 5.5 % are under review.
 
-<img src='img/distribution_of_fraud_categories.png' width='400' style='border: 1px solid grey;'>
+<img src='img/distribution_of_fraud_categories.png' style='border: 1px solid grey;'>
 
 <br>
 
@@ -48,8 +48,8 @@ Before analyzing any tendency available in monetary amounts, we need to confirm 
 - There is a "strip" of claims with incomes between 45,000-100,000, worthing approximately 5,000 on average claims. It is not quite clear how to describe them, but they could be everyday things that wealthier people can deal with (for example, car accident claims).
 - There is another strip of claims for at least 20,000 among people who only earn 10,000, which is unusual and may consist of fraudulent claims.
 
-<img src='img/claims_vs_income_sexcolor.png' width='400' style='border: 1px solid grey;'>
-<img src='img/claims_vs_income_fraudcolor.png' width='400' style='border: 1px solid grey;'>
+<img src='img/claims_vs_income_sexcolor.png' style='border: 1px solid grey;'>
+<img src='img/claims_vs_income_fraudcolor.png' style='border: 1px solid grey;'>
 
 <br>
 
@@ -57,8 +57,8 @@ Before analyzing any tendency available in monetary amounts, we need to confirm 
 - There is a large group of people who earn between 30,000-40,000 at all ages (average salary)
 - There are many people with higher incomes (60,000-100,000) just before the age of 60. At the age of 59 is when people in the U.S. can start withdrawing savings from their retirement accounts, so this may have something to do with this pattern.
 
-<img src='img/income_vs_age_sexcolor.png' width='400' style='border: 1px solid grey;'>
-<img src='img/income_vs_age_fraudcolor.png' width='400' style='border: 1px solid grey;'>
+<img src='img/income_vs_age_sexcolor.png' style='border: 1px solid grey;'>
+<img src='img/income_vs_age_fraudcolor.png' style='border: 1px solid grey;'>
 
 ---
 
@@ -68,7 +68,7 @@ Data preprocessing is crucial in machine learning as it directly impacts the out
 
 For this section we are going to use `MinMaxScaler()`, which is a python library designed for data preprocessing used to normalize or rescale features (numeric variables) to a fixed range, typically 0 to 1, or -1 to 1 if there are negative values in your data.
 
-<img src='img/data_scaling.png' width='800'>
+<img src='img/data_scaling.png' width='1000'>
 
 For categorical columns, since they are not numerical, we are going to use another type of encoding. 
 
@@ -76,7 +76,7 @@ One-hot encoding is a process of converting categorical data variables so they c
 
 Thankfully, Scikit-Learn provide us a solution for us if we import `OneHotEncoder()` scaler.
 
-<img src='img/data_encoding.png' width='800'>
+<img src='img/data_encoding.png' width='1000'>
 
 ---
 ### Data Modelling 📝
@@ -88,7 +88,7 @@ We are going to train a **k-means clustering algorithm**. K Means is a widely us
 Since the purpose of this project is to determine fraudulent claims ourselves, we are going to drop fraud category columns.
 
 
-<img src='img/final_analysis.png' width='500' style='border: 1px solid grey;'>
+<img src='img/final_analysis.png' style='border: 1px solid grey;'>
 
 With this picture, we can determine 4 groups:
 
